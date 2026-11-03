@@ -1,7 +1,7 @@
 # myoffice-skills
 
 Practical Agent Skills for office workflows, developer productivity, and English vocabulary learning.
-English editions use the base name and Simplified Chinese editions add `-cn`; some skills are Chinese-only.
+English editions use the base name and Simplified Chinese editions add `-cn`; some skills are Chinese-only. `trimme` keeps its chosen name.
 
 中文说明见 [README-CN.md](README-CN.md).
 
@@ -9,6 +9,7 @@ English editions use the base name and Simplified Chinese editions add `-cn`; so
 
 | English | 中文 | What it does |
 | -------------------- | -------------------------------------------------------------------- | -------------------------------------------------------- |
+| — | [`trimme`](skills/zh-CN/trimme/SKILL.md) | Removes filler and repetition, preserves meaning, and lightly clarifies logic without polishing. |
 | [`claude-md`](skills/en/claude-md/SKILL.md) | [`claude-md-cn`](skills/zh-CN/claude-md-cn/SKILL.md) | Creates or prunes CLAUDE.md from repository evidence. |
 | [`source-brief`](skills/en/source-brief/SKILL.md) | [`source-brief-cn`](skills/zh-CN/source-brief-cn/SKILL.md) | Organizes reading notes and distinguishes statements from evidence. |
 | [`word-aha`](skills/en/word-aha/SKILL.md) | [`word-aha-cn`](skills/zh-CN/word-aha-cn/SKILL.md) | Starts with sentences to learn English words through 1–5 sourced examples, context comparison, and transfer checks. |
@@ -34,10 +35,16 @@ npx --yes skills add ontology-of-everything/myoffice-skills --skill claude-md ar
 ### Simplified Chinese editions
 
 ```bash
-npx --yes skills add ontology-of-everything/myoffice-skills --skill brand-ui-design-cn presentation-making-cn claude-md-cn arb-cn source-brief-cn agent-dx-cli-cn word-aha-cn --agent codex --copy --yes
+npx --yes skills add ontology-of-everything/myoffice-skills --skill trimme brand-ui-design-cn presentation-making-cn claude-md-cn arb-cn source-brief-cn agent-dx-cli-cn word-aha-cn --agent codex --copy --yes
 ```
 
 ### Install one skill
+
+**`trimme`**
+
+```bash
+npx --yes skills add ontology-of-everything/myoffice-skills --skill trimme --agent codex --copy --yes
+```
 
 **`brand-ui-design-cn`**
 
@@ -87,13 +94,14 @@ npx --yes skills add ontology-of-everything/myoffice-skills --skill word-aha --a
 npx --yes skills add ontology-of-everything/myoffice-skills --list
 ```
 
-English payloads live in `skills/en/`; Simplified Chinese payloads live in `skills/zh-CN/` and keep the `-cn` skill names. ClawHub publishes English editions only.
+English payloads live in `skills/en/`; Simplified Chinese payloads live in `skills/zh-CN/` and use their declared names; Chinese-only `trimme` keeps its chosen name. ClawHub publishes English editions only.
 
 ## Usage
 
 Reading notes, English vocabulary practice, and brand UI design support automatic selection and explicit invocation; other skills require explicit invocation:
 
 ```text
+$trimme Clean up this text while preserving meaning, without polishing
 $agent-dx-cli Review this CLI and implement the authorized improvements
 $source-brief Organize this paper and distinguish claims, opinions, experience, and unverified information
 $word-aha Help me learn everyday English words for ordering coffee through context cards

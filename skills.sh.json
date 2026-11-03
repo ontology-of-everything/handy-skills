@@ -3,6 +3,13 @@
   "notGrouped": "bottom",
   "groupings": [
     {
+      "title": "Text cleanup",
+      "description": "Remove filler and repetition while preserving meaning, without polishing.",
+      "skills": [
+        "trimme"
+      ]
+    },
+    {
       "title": "Interface design",
       "description": "UI design principles for brand memory and interface experience.",
       "skills": [

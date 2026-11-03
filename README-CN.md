@@ -1,6 +1,6 @@
 # myoffice-skills
 
-面向办公、开发提效与英文单词学习的 Agent Skills 仓库，英文版使用基础名，简体中文版增加 `-cn`，部分技能仅提供中文版。
+面向办公、开发提效与英文单词学习的 Agent Skills 仓库，英文版使用基础名，简体中文版增加 `-cn`，部分技能仅提供中文版；`trimme` 保留指定名称。
 
 English: [README.md](README.md)。
 
@@ -8,6 +8,7 @@ English: [README.md](README.md)。
 
 | English | 中文 | 能力 |
 | -------------------- | -------------------------------------------------------------------- | ------------------------------------- |
+| — | [`trimme`](skills/zh-CN/trimme/SKILL.md) | 保留原意，去掉口头禅、重复和废话，适当理顺逻辑，不做润色 |
 | [`claude-md`](skills/en/claude-md/SKILL.md) | [`claude-md-cn`](skills/zh-CN/claude-md-cn/SKILL.md) | 根据仓库事实生成或精简 CLAUDE.md |
 | [`source-brief`](skills/en/source-brief/SKILL.md) | [`source-brief-cn`](skills/zh-CN/source-brief-cn/SKILL.md) | 整理文章与论文，区分陈述性质和证据状态 |
 | [`word-aha`](skills/en/word-aha/SKILL.md) | [`word-aha-cn`](skills/zh-CN/word-aha-cn/SKILL.md) | 以句子为起点，从 1～5 句有来源例句中对照猜义，再换句检验英文单词用法 |
@@ -27,7 +28,7 @@ English: [README.md](README.md)。
 ### 中文版
 
 ```bash
-npx --yes skills add ontology-of-everything/myoffice-skills --skill brand-ui-design-cn presentation-making-cn claude-md-cn arb-cn source-brief-cn agent-dx-cli-cn word-aha-cn --agent codex --copy --yes
+npx --yes skills add ontology-of-everything/myoffice-skills --skill trimme brand-ui-design-cn presentation-making-cn claude-md-cn arb-cn source-brief-cn agent-dx-cli-cn word-aha-cn --agent codex --copy --yes
 ```
 
 ### 英文版
@@ -37,6 +38,12 @@ npx --yes skills add ontology-of-everything/myoffice-skills --skill claude-md ar
 ```
 
 ### 按需安装单个技能
+
+**`trimme`**
+
+```bash
+npx --yes skills add ontology-of-everything/myoffice-skills --skill trimme --agent codex --copy --yes
+```
 
 **`brand-ui-design-cn`**
 
@@ -86,13 +93,14 @@ npx --yes skills add ontology-of-everything/myoffice-skills --skill word-aha-cn 
 npx --yes skills add ontology-of-everything/myoffice-skills --list
 ```
 
-英文载荷位于 `skills/en/`，简体中文载荷位于 `skills/zh-CN/`；中文技能名仍以 `-cn` 结尾。ClawHub 仅发布英文版。
+英文载荷位于 `skills/en/`，简体中文载荷位于 `skills/zh-CN/`；中文独立技能 `trimme` 保留指定名称。ClawHub 仅发布英文版。
 
 ## 用法
 
 阅读整理、英文单词学习、品牌记忆与界面设计支持自动选用，也可显式调用；其余技能仅显式调用：
 
 ```text
+$trimme 清理以下内容，保留原意，不做润色
 $agent-dx-cli-cn 审查此 CLI，以证据评分并实施已授权的改进
 $source-brief-cn 整理这篇论文，区分事实、观点、经验与未证实信息
 $word-aha-cn 用交互卡片带我学习点咖啡时常用的英文单词

@@ -1,6 +1,19 @@
 # Public skill index and per-skill versions. Keep in sync with skills/.
 version: 1
 skills:
+- id: trimme
+  path: skills/zh-CN/trimme
+  display_name: trimme
+  display_name_zh: trimme 内容清理
+  domain: content
+  subdomains: [text-cleanup, concision]
+  summary: Remove filler and repetition while preserving meaning; lightly clarify logic without polishing.
+  summary_zh: 保留原意，去掉口头禅、重复和废话，适当理顺逻辑，不做润色。
+  version: 0.1.0
+  agents: [cursor, claude-code, codex, openclaw]
+  distribution: direct-skill
+  language: zh-CN
+  standalone: true
 - id: brand-ui-design-cn
   path: skills/zh-CN/brand-ui-design-cn
   display_name: 品牌记忆与界面设计

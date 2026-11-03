@@ -49,3 +49,5 @@ longer needed. Preserve runtime `skills/**/references/` and maintained fixtures/
   source-project clones do not belong in the repository.
 - Preserve explicit-only invocation where declared. Update marketplace grouping and the README
   with changes to the bilingual pair; do not ship QA or development reports inside payloads.
+- `trimme` is a Chinese-only standalone skill at `skills/zh-CN/trimme`; retain the
+  explicitly chosen name without adding `-cn`, and keep Codex invocation explicit-only.
