@@ -4,9 +4,10 @@
   "groupings": [
     {
       "title": "Text cleanup",
-      "description": "Remove filler and repetition while preserving meaning, without polishing.",
+      "description": "Restate the last message by cleaning it up only, without polishing.",
       "skills": [
-        "trimme"
+        "debloat",
+        "debloat-cn"
       ]
     },
     {

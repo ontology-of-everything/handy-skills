@@ -1,19 +1,38 @@
 # Public skill index and per-skill versions. Keep in sync with skills/.
 version: 1
 skills:
-- id: trimme
-  path: skills/zh-CN/trimme
-  display_name: trimme
-  display_name_zh: trimme 内容清理
+- id: debloat
+  path: skills/en/debloat
+  display_name: Debloat
+  display_name_zh: 去废话重述
   domain: content
-  subdomains: [text-cleanup, concision]
-  summary: Remove filler and repetition while preserving meaning; lightly clarify logic without polishing.
-  summary_zh: 保留原意，去掉口头禅、重复和废话，适当理顺逻辑，不做润色。
+  subdomains: &debloat_subdomains
+  - text-cleanup
+  - concision
+  summary: Restate the last message by cleaning it up only. Make it more logical and more concise, and remove filler and empty talk, without polishing.
+  summary_zh: 重述最后一条信息，只做清理，不要润色，更有逻辑、更简洁，去掉口头禅和废话。
   version: 0.1.0
-  agents: [cursor, claude-code, codex, openclaw]
+  agents: &debloat_agents
+  - cursor
+  - claude-code
+  - codex
+  - openclaw
+  distribution: direct-skill
+  language: en
+  translation_of: debloat-cn
+- id: debloat-cn
+  path: skills/zh-CN/debloat-cn
+  display_name: 去废话重述
+  display_name_zh: 去废话重述
+  domain: content
+  subdomains: *debloat_subdomains
+  summary: 重述最后一条信息，只做清理，不要润色，更有逻辑、更简洁，去掉口头禅和废话。
+  summary_zh: 重述最后一条信息，只做清理，不要润色，更有逻辑、更简洁，去掉口头禅和废话。
+  version: 0.1.0
+  agents: *debloat_agents
   distribution: direct-skill
   language: zh-CN
-  standalone: true
+  translation_of: debloat
 - id: brand-ui-design-cn
   path: skills/zh-CN/brand-ui-design-cn
   display_name: 品牌记忆与界面设计

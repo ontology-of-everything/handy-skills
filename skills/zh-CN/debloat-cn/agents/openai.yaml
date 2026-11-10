@@ -1,0 +1,6 @@
+interface:
+  display_name: "去废话重述"
+  short_description: "重述最后一条信息，只做清理，不要润色"
+  default_prompt: "使用 $debloat-cn，重述最后一条信息，只做清理，不要润色。"
+policy:
+  allow_implicit_invocation: false
