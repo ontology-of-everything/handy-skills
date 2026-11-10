@@ -1,8 +1,11 @@
 # Changelog
 
-## 0.3.0 - 2026-10-24
+## 1.0.0 - 2026-11-10
 
-- Retain six capabilities, including the bilingual Agent DX CLI 0.4.2 instructions and focused companion references.
-- Preserve existing scoring and explicit invocation; behavioral scenarios remain distinct from executed evidence.
-- Standardize repository ownership, directory rules and discovery metadata.
-- Remove research clones, comparison notes and generated workspaces; block local-only files in commits, pushes and CI.
+### Breaking changes
+
+- Remove the Chinese-only trimme skill. Restate the last message with debloat or debloat-cn. (by @AgenticWeb4)
+
+### Features
+
+- Add explicit-invocation debloat in English and Simplified Chinese. It restates the last message by cleaning it up only, without polishing. (by @AgenticWeb4)
