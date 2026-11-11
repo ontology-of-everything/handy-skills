@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.0 - 2026-11-12
+
+### Breaking changes
+- Remove `claude-md`, `brand-ui-design-cn`, and `presentation-making-cn`. (by @AgenticWeb4)
+
+### Documentation
+- Lead the README with the remaining skills and one install command. (by @AgenticWeb4)
+
 ## 1.0.0 - 2026-11-10
 
 ### Breaking changes

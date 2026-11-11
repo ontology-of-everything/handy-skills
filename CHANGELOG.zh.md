@@ -1,5 +1,13 @@
 # 更新日志
 
+## 2.0.0 - 2026-11-12
+
+### 破坏性变更
+- 移除 `claude-md`、`brand-ui-design-cn` 和 `presentation-making-cn`。（by @AgenticWeb4）
+
+### 文档
+- README 改为先列技能，安装只保留一条命令。（by @AgenticWeb4）
+
 ## 1.0.0 - 2026-11-10
 
 ### 破坏性变更
