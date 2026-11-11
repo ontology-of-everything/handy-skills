@@ -1,6 +1,6 @@
 ---
 name: word-aha
-description: "Learn English words by starting with sentences: search for 1–5 familiar examples, infer meaning from context, then check it in new sentences; use for specific words, topics, or review, excluding simple lookups and translation."
+description: "Learn English words by starting with sentences: search for 3–7 familiar examples, infer meaning from context, then check it in new sentences; use for specific words, topics, or review, excluding simple lookups and translation."
 license: Apache-2.0
 metadata:
   language: en
@@ -11,7 +11,7 @@ metadata:
 # Word Aha
 
 This skill overturns the traditional "memorize words → assemble sentences" order by starting with
-sentences: search for 1–5 sourced everyday examples of the target English word's current use with
+sentences: search for 3–7 sourced everyday examples of the target English word's current use with
 familiar surrounding language as scaffolding, keep the target visible, let the learner compare
 examples to infer meaning, add context or simplify unclear language, then use a post-answer "aha!"
 callout to connect meaning, collocations, and situations while fading hints. Use transfer checks in

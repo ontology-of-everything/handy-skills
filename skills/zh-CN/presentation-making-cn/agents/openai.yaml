@@ -1,6 +1,0 @@
-interface:
-  display_name: "演示文稿制作"
-  short_description: "从材料理解、塑形到可记忆的演示文稿，含关键决策对齐与检视重构"
-  default_prompt: "使用 $presentation-making-cn，将提供的材料制作成清晰、可记忆的演示文稿。"
-policy:
-  allow_implicit_invocation: false

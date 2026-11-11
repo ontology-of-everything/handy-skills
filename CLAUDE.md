@@ -1,6 +1,6 @@
-# myoffice-skills
+# handy-skills
 
-Office workflows, presentations, source understanding and developer-facing productivity skills.
+Office workflows, source understanding, and developer-facing productivity skills.
 
 ## Repository ownership
 
@@ -8,7 +8,7 @@ Office workflows, presentations, source understanding and developer-facing produ
 | --- | --- |
 | `concept-skills` | Software concepts, semantic modeling, knowledge organization, and visual learning. |
 | `cloud-concept-skills` | Huawei Cloud operations, billing, controlled provisioning, and account onboarding. |
-| `myoffice-skills` | Office workflows, presentations, source notes, repository guidance, and Agent DX tooling. |
+| `handy-skills` | Office workflows and source notes. |
 
 ## Directory contract
 
@@ -43,9 +43,5 @@ longer needed. Preserve runtime `skills/**/references/` and maintained fixtures/
 
 ## Office-specific rules
 
-- `presentation-making-cn` and `brand-ui-design-cn` are Chinese-only catalog entries. Preserve
-  explicitly requested standalone locales and invocation policies instead of fabricating translations.
-- Keep presentation and interface templates/assets with their owning skill; research copies and
-  source-project clones do not belong in the repository.
 - Preserve explicit-only invocation where declared. Update marketplace grouping and the README
   with changes to the bilingual pair; do not ship QA or development reports inside payloads.
