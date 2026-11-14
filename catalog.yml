@@ -1,6 +1,22 @@
 # Public skill index and per-skill versions. Keep in sync with skills/.
 version: 1
 skills:
+- id: security-and-hardening
+  path: skills/en/security-and-hardening
+  display_name: Security and Hardening
+  display_name_zh: 安全与加固
+  domain: security
+  subdomains: [security-review, hardening, threat-modeling]
+  summary: Harden applications against vulnerabilities, including input handling, authentication, dependencies, privacy, and AI features.
+  summary_zh: 加固应用安全，覆盖输入处理、身份认证、依赖、隐私和 AI 功能。
+  version: 0.0.0+git.39b723c
+  agents: [cursor, claude-code, codex, openclaw]
+  distribution: repository-with-shared-references
+  language: en
+  standalone: true
+  source_url: https://github.com/addyosmani/agent-skills/tree/main/skills/security-and-hardening
+  source_commit: 39b723ceebf81474d0557c1fecd01eddab585563
+  source_license: MIT
 - id: debloat
   path: skills/en/debloat
   display_name: Debloat
@@ -126,3 +142,45 @@ skills:
   distribution: direct-skill
   language: zh-CN
   translation_of: word-aha
+- id: principle-thin-wrapper-cn
+  path: skills/zh-CN/principle-thin-wrapper-cn
+  display_name: 薄封装原则
+  display_name_zh: 薄封装原则
+  domain: architecture
+  subdomains: [component-reuse, wrappers]
+  summary: 薄封装原则：优先复用成熟组件，按需薄封装。
+  summary_zh: 薄封装原则：优先复用成熟组件，按需薄封装。
+  version: 0.1.0
+  agents: [cursor, claude-code, codex, openclaw]
+  distribution: direct-skill
+  language: zh-CN
+  standalone: true
+- id: fit
+  path: skills/en/fit
+  display_name: Fit
+  display_name_zh: 以人为中心的前端设计与修复
+  domain: frontend
+  subdomains: [design, troubleshooting, human-centered-design]
+  summary: Guide frontend changes, interface design, and UI troubleshooting with human-centered decisions across UX, DX, AX, and PMX.
+  summary_zh: 以人为中心指导前端修改、设计和排查。
+  version: 0.1.1
+  agents: [cursor, claude-code, codex, openclaw]
+  marketplaces: [clawhub]
+  clawhub_url: https://clawhub.ai/agenticweb4/fit
+  clawhub_license: MIT-0 on ClawHub; repository source remains Apache-2.0
+  distribution: direct-skill
+  language: en
+  translation_of: fit-cn
+- id: fit-cn
+  path: skills/zh-CN/fit-cn
+  display_name: Fit
+  display_name_zh: 以人为中心的前端设计与修复
+  domain: frontend
+  subdomains: [design, troubleshooting, human-centered-design]
+  summary: 以前端修改、界面设计和 UI 排查为场景，以人为中心兼顾 UX、DX、AX 与 PMX。
+  summary_zh: 以人为中心指导前端修改、设计和排查。
+  version: 0.1.1
+  agents: [cursor, claude-code, codex, openclaw]
+  distribution: direct-skill
+  language: zh-CN
+  translation_of: fit

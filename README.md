@@ -12,8 +12,11 @@ Agent skills for office work, reading notes, and English vocabulary. English nam
 | [`source-brief`](skills/en/source-brief/SKILL.md) | [`source-brief-cn`](skills/zh-CN/source-brief-cn/SKILL.md) | Organize reading notes. Separate statements from evidence. |
 | [`word-aha`](skills/en/word-aha/SKILL.md) | [`word-aha-cn`](skills/zh-CN/word-aha-cn/SKILL.md) | Learn an English word from 1–5 sourced sentences, then check it in a new sentence. |
 | [`arb`](skills/en/arb/SKILL.md) | [`arb-cn`](skills/zh-CN/arb-cn/SKILL.md) | Architecture Review Board review. Criteria pending. |
+| [`fit`](skills/en/fit/SKILL.md) | [`fit-cn`](skills/zh-CN/fit-cn/SKILL.md) | Human-centered frontend changes, design, and troubleshooting. |
+| [`security-and-hardening`](skills/en/security-and-hardening/SKILL.md) | — | Security review and hardening. Imported unchanged from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills/tree/main/skills/security-and-hardening), MIT license. |
+| — | [`principle-thin-wrapper-cn`](skills/zh-CN/principle-thin-wrapper-cn/SKILL.md) | Prefer reusing mature components and wrap them only as needed. |
 
-`source-brief` and `word-aha` can be selected automatically. The others run only when named.
+`source-brief` and `word-aha` can be selected automatically, as can `principle-thin-wrapper-cn`, `fit`, and `fit-cn`. The others run only when named.
 
 ```text
 $debloat Restate the last message. Clean it up only
@@ -36,11 +39,13 @@ English:
 npx --yes skills add ontology-of-everything/handy-skills --skill debloat arb source-brief word-aha --agent codex --copy --yes
 ```
 
-Simplified Chinese: the same command with `debloat-cn arb-cn source-brief-cn word-aha-cn`.
+Simplified Chinese: the same command with `debloat-cn arb-cn source-brief-cn word-aha-cn principle-thin-wrapper-cn`.
 
 One skill: replace that list with one name. List the skills: `npx --yes skills add ontology-of-everything/handy-skills --list`.
 
 Payloads: `skills/en/`, `skills/zh-CN/`. ClawHub publishes English only.
+
+The imported `security-and-hardening` skill also uses the shared [security checklist](skills/references/security-checklist.md). Keep that file at its repository-relative path when using this skill; single-skill installers may not copy it.
 
 ## Contributing
 
@@ -54,3 +59,4 @@ git config core.hooksPath .githooks
 ## License
 
 [Apache-2.0](LICENSE) © handy-skills contributors.
+The imported security-and-hardening skill and its shared checklist are covered by the upstream [MIT license](skills/en/security-and-hardening/LICENSE).

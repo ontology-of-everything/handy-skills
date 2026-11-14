@@ -15,7 +15,8 @@
       "description": "Architecture Review Board reviews of proposals, ADRs, and design changes.",
       "skills": [
         "arb",
-        "arb-cn"
+        "arb-cn",
+        "principle-thin-wrapper-cn"
       ]
     },
     {
@@ -32,6 +33,14 @@
       "skills": [
         "word-aha",
         "word-aha-cn"
+      ]
+    },
+    {
+      "title": "Frontend design and repair",
+      "description": "Human-centered frontend changes, design, and troubleshooting.",
+      "skills": [
+        "fit",
+        "fit-cn"
       ]
     }
   ]

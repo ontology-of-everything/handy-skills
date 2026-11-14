@@ -49,6 +49,18 @@ bases = sorted(path.name for path in EN_SKILLS.iterdir() if path.is_dir() and (p
 cn_names = sorted(path.name for path in CN_SKILLS.iterdir() if path.is_dir() and (path / "SKILL.md").is_file())
 
 for base in bases:
+    entry = catalog_by_id.get(base, {})
+    if entry.get("standalone") is True:
+        meta = frontmatter(EN_SKILLS / base / "SKILL.md")
+        if f"{base}-cn" in cn_names or meta.get("name") != base:
+            fail(f"invalid standalone English skill: {base}")
+        if entry.get("path") != f"skills/en/{base}" or entry.get("language") != "en":
+            fail(f"standalone catalog mismatch: {base}")
+        if entry.get("translation_of") or (meta.get("metadata") or {}).get("translation_of"):
+            fail(f"standalone skill must not name a translation pair: {base}")
+        if HAN.search((EN_SKILLS / base / "SKILL.md").read_text(encoding="utf-8")):
+            fail(f"English SKILL.md contains Chinese prose: {base}")
+        continue
     cn = f"{base}-cn"
     if cn not in cn_names:
         fail(f"missing Chinese pair for {base}")
@@ -77,7 +89,7 @@ for base in bases:
         if entry.get("language") != ("zh-CN" if locale == "zh-CN" else "en"):
             fail(f"catalog language mismatch: {expected}")
 
-standalone = {name for name, entry in catalog_by_id.items() if entry.get("standalone") is True}
+standalone = {name for name, entry in catalog_by_id.items() if entry.get("standalone") is True and entry.get("language") == "zh-CN"}
 for name in standalone:
     entry = catalog_by_id[name]
     if name not in cn_names or name[:-3] in bases:
@@ -112,4 +124,5 @@ for name, entry in catalog_by_id.items():
     if source_version is not None and str(source_version) != version:
         fail(f"catalog/frontmatter version mismatch: {name}")
 
-print(f"OK: {len(bases)} localization pairs and {len(standalone)} standalone skills validated")
+standalone_en = sum(catalog_by_id[name].get("standalone") is True for name in bases)
+print(f"OK: {len(bases) - standalone_en} localization pairs and {len(standalone) + standalone_en} standalone skills validated")
