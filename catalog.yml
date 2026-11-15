@@ -1,6 +1,21 @@
 # Public skill index and per-skill versions. Keep in sync with skills/.
 version: 1
 skills:
+- id: bro-what
+  path: skills/en/bro-what
+  display_name: Bro What
+  display_name_zh: 清晰表达
+  domain: content
+  subdomains: [clarity, concision, domain-language]
+  summary: Make explanations clearer and more concise while preserving domain language and technical precision.
+  summary_zh: 在保留领域语言和技术准确性的同时，让表达更清晰简洁。
+  version: 0.1.0
+  agents: [cursor, claude-code, codex, openclaw]
+  marketplaces: [clawhub]
+  clawhub_url: https://clawhub.ai/agenticweb4/bro-what
+  distribution: direct-skill
+  language: en
+  standalone: true
 - id: security-and-hardening
   path: skills/en/security-and-hardening
   display_name: Security and Hardening
