@@ -7,9 +7,9 @@ skills:
   display_name_zh: 清晰表达
   domain: content
   subdomains: [clarity, concision, domain-language]
-  summary: Make explanations clearer and more concise while preserving domain language and technical precision.
+  summary: Make explanations clearer, more concise, and more natural using shared domain language and precise technical terms.
   summary_zh: 在保留领域语言和技术准确性的同时，让表达更清晰简洁。
-  version: 0.1.0
+  version: 0.1.1
   agents: [cursor, claude-code, codex, openclaw]
   marketplaces: [clawhub]
   clawhub_url: https://clawhub.ai/agenticweb4/bro-what
