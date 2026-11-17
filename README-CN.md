@@ -15,6 +15,7 @@ English: [README.md](README.md)
 | [`fit`](skills/en/fit/SKILL.md) | [`fit-cn`](skills/zh-CN/fit-cn/SKILL.md) | 以人为中心指导前端修改、设计和排查。 |
 | [`security-and-hardening`](skills/en/security-and-hardening/SKILL.md) | — | 安全审查与加固。原样引自 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills/tree/main/skills/security-and-hardening)，采用 MIT 许可证。 |
 | — | [`principle-thin-wrapper-cn`](skills/zh-CN/principle-thin-wrapper-cn/SKILL.md) | 薄封装原则：优先复用成熟组件，按需薄封装。 |
+| [`code-walkthrough`](skills/en/code-walkthrough/SKILL.md) | [`code-walkthrough-cn`](skills/zh-CN/code-walkthrough-cn/SKILL.md) | 用同一件业务事件走读代码，横向拆模块、纵向追方法，对照接口与表行变化。 |
 
 `source-brief-cn`、`word-aha-cn`、`principle-thin-wrapper-cn`、`fit` 和 `fit-cn` 可以自动选用。其余技能只在点名时运行。
 

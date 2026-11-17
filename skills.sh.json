@@ -42,6 +42,14 @@
         "fit",
         "fit-cn"
       ]
+    },
+    {
+      "title": "Code reading",
+      "description": "Trace one business event through modules, methods, interfaces, and table rows.",
+      "skills": [
+        "code-walkthrough",
+        "code-walkthrough-cn"
+      ]
     }
   ]
 }

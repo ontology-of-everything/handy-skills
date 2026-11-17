@@ -15,6 +15,7 @@ Agent skills for office work, reading notes, and English vocabulary. English nam
 | [`fit`](skills/en/fit/SKILL.md) | [`fit-cn`](skills/zh-CN/fit-cn/SKILL.md) | Human-centered frontend changes, design, and troubleshooting. |
 | [`security-and-hardening`](skills/en/security-and-hardening/SKILL.md) | — | Security review and hardening. Imported unchanged from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills/tree/main/skills/security-and-hardening), MIT license. |
 | — | [`principle-thin-wrapper-cn`](skills/zh-CN/principle-thin-wrapper-cn/SKILL.md) | Prefer reusing mature components and wrap them only as needed. |
+| [`code-walkthrough`](skills/en/code-walkthrough/SKILL.md) | [`code-walkthrough-cn`](skills/zh-CN/code-walkthrough-cn/SKILL.md) | Walk through one business event across modules and methods, comparing interface data and table rows. |
 
 `source-brief` and `word-aha` can be selected automatically, as can `principle-thin-wrapper-cn`, `fit`, and `fit-cn`. The others run only when named.
 

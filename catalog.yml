@@ -199,3 +199,31 @@ skills:
   distribution: direct-skill
   language: zh-CN
   translation_of: fit
+- id: code-walkthrough-cn
+  path: skills/zh-CN/code-walkthrough-cn
+  display_name: 代码走读
+  display_name_zh: 代码走读
+  domain: learning
+  subdomains: [code-reading, call-tracing, data-flow]
+  summary: 用一件完整业务事件走读真实代码，横向拆解模块，纵向追踪方法与接口、表行变化。
+  summary_zh: 用一件完整业务事件走读真实代码，横向拆解模块，纵向追踪方法与接口、表行变化。
+  version: 0.1.1
+  agents: [cursor, claude-code, codex, openclaw]
+  distribution: direct-skill
+  language: zh-CN
+  translation_of: code-walkthrough
+- id: code-walkthrough
+  path: skills/en/code-walkthrough
+  display_name: Code Walkthrough
+  display_name_zh: 代码走读
+  domain: learning
+  subdomains: [code-reading, call-tracing, data-flow]
+  summary: Walk through real code using one complete business event, mapping modules and tracing methods, interface data, and table-row changes.
+  summary_zh: 用一件完整业务事件走读真实代码，横向拆解模块，纵向追踪方法与接口、表行变化。
+  version: 0.1.1
+  agents: [cursor, claude-code, codex, openclaw]
+  marketplaces: [clawhub]
+  clawhub_url: https://clawhub.ai/agenticweb4/code-walkthrough
+  distribution: direct-skill
+  language: en
+  translation_of: code-walkthrough-cn
