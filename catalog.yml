@@ -227,3 +227,29 @@ skills:
   distribution: direct-skill
   language: en
   translation_of: code-walkthrough-cn
+- id: why-aha
+  path: skills/en/why-aha
+  display_name: Why Aha
+  display_name_zh: 深度阅读复述
+  domain: learning
+  subdomains: [reading-comprehension, causal-reasoning]
+  summary: Retell a source in plain language and explain its reasoning. Use only when explicitly named.
+  summary_zh: 用大白话复述原文，讲清背后的因果。仅在明确点名时使用。
+  version: 0.1.0
+  agents: [codex]
+  distribution: direct-skill
+  language: en
+  translation_of: why-aha-cn
+- id: why-aha-cn
+  path: skills/zh-CN/why-aha-cn
+  display_name: Why Aha
+  display_name_zh: 深度阅读复述
+  domain: learning
+  subdomains: [reading-comprehension, causal-reasoning]
+  summary: 用大白话复述原文，讲清背后的因果。仅在明确点名时使用。
+  summary_zh: 用大白话复述原文，讲清背后的因果。仅在明确点名时使用。
+  version: 0.1.0
+  agents: [codex]
+  distribution: direct-skill
+  language: zh-CN
+  translation_of: why-aha

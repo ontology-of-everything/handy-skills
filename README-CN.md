@@ -10,6 +10,7 @@ English: [README.md](README.md)
 | --- | --- | --- |
 | [`debloat`](skills/en/debloat/SKILL.md) | [`debloat-cn`](skills/zh-CN/debloat-cn/SKILL.md) | 重述最后一条信息，只做清理，不润色：理顺逻辑，减少字数，去掉口头禅和废话 |
 | [`source-brief`](skills/en/source-brief/SKILL.md) | [`source-brief-cn`](skills/zh-CN/source-brief-cn/SKILL.md) | 整理文章与论文，区分陈述和证据 |
+| [`why-aha`](skills/en/why-aha/SKILL.md) | [`why-aha-cn`](skills/zh-CN/why-aha-cn/SKILL.md) | 用大白话复述原文，讲清背后的因果。仅在明确点名时使用。 |
 | [`word-aha`](skills/en/word-aha/SKILL.md) | [`word-aha-cn`](skills/zh-CN/word-aha-cn/SKILL.md) | 从 1～5 句有来源例句对照猜义，再换句检验英文单词 |
 | [`arb`](skills/en/arb/SKILL.md) | [`arb-cn`](skills/zh-CN/arb-cn/SKILL.md) | 架构评审委员会评审。准则待定 |
 | [`fit`](skills/en/fit/SKILL.md) | [`fit-cn`](skills/zh-CN/fit-cn/SKILL.md) | 以人为中心指导前端修改、设计和排查。 |

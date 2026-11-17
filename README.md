@@ -10,6 +10,7 @@ Agent skills for office work, reading notes, and English vocabulary. English nam
 | --- | --- | --- |
 | [`debloat`](skills/en/debloat/SKILL.md) | [`debloat-cn`](skills/zh-CN/debloat-cn/SKILL.md) | Restate the last message. Clean it up only: clearer logic, fewer words, filler removed, wording left unpolished. |
 | [`source-brief`](skills/en/source-brief/SKILL.md) | [`source-brief-cn`](skills/zh-CN/source-brief-cn/SKILL.md) | Organize reading notes. Separate statements from evidence. |
+| [`why-aha`](skills/en/why-aha/SKILL.md) | [`why-aha-cn`](skills/zh-CN/why-aha-cn/SKILL.md) | Retell a source in plain language and explain its reasoning. Use only when explicitly named. |
 | [`word-aha`](skills/en/word-aha/SKILL.md) | [`word-aha-cn`](skills/zh-CN/word-aha-cn/SKILL.md) | Learn an English word from 1–5 sourced sentences, then check it in a new sentence. |
 | [`arb`](skills/en/arb/SKILL.md) | [`arb-cn`](skills/zh-CN/arb-cn/SKILL.md) | Architecture Review Board review. Criteria pending. |
 | [`fit`](skills/en/fit/SKILL.md) | [`fit-cn`](skills/zh-CN/fit-cn/SKILL.md) | Human-centered frontend changes, design, and troubleshooting. |
